@@ -117,6 +117,16 @@ const Signup = () => {
           >
             {loading ? "Signing Up..." : "Sign Up"}
           </button>
+          <p className="mt-3 text-center">
+            Don’t have an account?{" "}
+            <span
+              className="text-primary"
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/signin")}
+            >
+              Sign In
+            </span>
+          </p>
         </form>
       </div>
     </div>
